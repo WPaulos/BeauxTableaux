@@ -39,6 +39,18 @@ main {
             height: 35px;
             margin-top: 15px;
           }
+
+          img.b {
+            animation: b-animation 1.2s 1 1s alternate ease-out;
+            @keyframes b-animation {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-130%);
+              }
+            }
+          }
         }
       }
 
