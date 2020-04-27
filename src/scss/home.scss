@@ -17,14 +17,14 @@ main {
         height: 380px;
         width: 60%;
         display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: center;
 
         .letters {
           display: flex;
           flex-direction: column;
-          margin-right: 15%;
-          margin-bottom: 15%;
+          margin-right: -40%;
+          margin-bottom: -25%;
           img.t,
           .a-noir,
           .l {
@@ -41,13 +41,13 @@ main {
           }
 
           img.b {
-            animation: b-animation 1.2s 1 1s alternate ease-out;
+            animation: b-animation 1.5s 1 1.2s forwards ease-out;
             @keyframes b-animation {
               0% {
                 transform: translateX(0);
               }
               100% {
-                transform: translateX(-130%);
+                transform: translateX(-180%);
               }
             }
           }
