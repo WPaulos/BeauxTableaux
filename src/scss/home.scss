@@ -16,6 +16,30 @@ main {
         border: black 1px solid;
         height: 380px;
         width: 60%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        .letters {
+          display: flex;
+          flex-direction: column;
+          margin-right: 15%;
+          margin-bottom: 15%;
+          img.t,
+          .a-noir,
+          .l {
+            display: none;
+          }
+
+          img.b,
+          .e,
+          .a,
+          .u,
+          .x {
+            height: 35px;
+            margin-top: 15px;
+          }
+        }
       }
 
       &__scroll {
