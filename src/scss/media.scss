@@ -19,6 +19,25 @@
   }
 }
 
-/* ----- Lettres cachées ----- */
+/* animation lettre noir */
+
+/*--- animation ---*/
+$Nletter: t 1s, a-noir 2s, l 3s;
+
+@each $letters, $delay in $Nletter {
+  img.#{$letters} {
+    animation: apparition 0.8s $delay linear backwards;
+  }
+  @keyframes apparition {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+/*--- keyrame ---*/
 
 /* ----- Placement lettres BEAUX ----- */
